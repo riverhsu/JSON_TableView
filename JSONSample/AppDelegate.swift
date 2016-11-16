@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        
         return true
     }
 
@@ -40,7 +43,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    /*
+    func uploadSampleData() -> NSDictionary {
+        let url = Bundle.main.url(forResource: "toxics_OKformat", withExtension: "json")
+        let data = try! Data(contentsOf: url!)
+        let jsonResult: NSDictionary
+        let foodArray : NSDictionary
+        
+        do{
+            // Obselete in iOS 10
+            // let jsonResult = try NSJSONSerialization.JSONObjctWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+            jsonResult = try! JSONSerialization.jsonObject(with: data) as!NSDictionary
+            foodArray = jsonResult.value(forKey: "FoodTypes") as! NSDictionary
+            
+        } catch {
+            print("error in parsing JSON")
+        }
+        return foodArray
+    }
+    */
 }
 

@@ -12,6 +12,10 @@
 		4B141CE11DD9500D00AD95AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B141CDF1DD9500D00AD95AA /* Main.storyboard */; };
 		4B141CE31DD9500D00AD95AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B141CE21DD9500D00AD95AA /* Assets.xcassets */; };
 		4B141CE61DD9500D00AD95AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B141CE41DD9500D00AD95AA /* LaunchScreen.storyboard */; };
+		4B141CEE1DD9516F00AD95AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B141CED1DD9516F00AD95AA /* GoogleService-Info.plist */; };
+		4B141CF01DD96CBE00AD95AA /* toxics_OKformat.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B141CEF1DD96CBE00AD95AA /* toxics_OKformat.json */; };
+		4B141CF21DD96D0200AD95AA /* FoodToxic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B141CF11DD96D0200AD95AA /* FoodToxic.swift */; };
+		8540FDF14957CCF1809F40A3 /* Pods_JSONSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE937F3F1873191E86DD9595 /* Pods_JSONSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		4B141CE21DD9500D00AD95AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B141CE51DD9500D00AD95AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B141CE71DD9500D00AD95AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B141CED1DD9516F00AD95AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B141CEF1DD96CBE00AD95AA /* toxics_OKformat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toxics_OKformat.json; sourceTree = "<group>"; };
+		4B141CF11DD96D0200AD95AA /* FoodToxic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodToxic.swift; sourceTree = "<group>"; };
+		B9675699BACD03ECE076A292 /* Pods-JSONSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONSample/Pods-JSONSample.release.xcconfig"; sourceTree = "<group>"; };
+		DE3839A343D7C49C2C224729 /* Pods-JSONSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONSample/Pods-JSONSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FE937F3F1873191E86DD9595 /* Pods_JSONSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8540FDF14957CCF1809F40A3 /* Pods_JSONSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39172D99A117215B4FACD587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE937F3F1873191E86DD9595 /* Pods_JSONSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CE5035C14AEA1B4CE0031BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE3839A343D7C49C2C224729 /* Pods-JSONSample.debug.xcconfig */,
+				B9675699BACD03ECE076A292 /* Pods-JSONSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4B141CCF1DD9500D00AD95AA = {
 			isa = PBXGroup;
 			children = (
 				4B141CDA1DD9500D00AD95AA /* JSONSample */,
 				4B141CD91DD9500D00AD95AA /* Products */,
+				3CE5035C14AEA1B4CE0031BD /* Pods */,
+				39172D99A117215B4FACD587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +89,10 @@
 				4B141CDF1DD9500D00AD95AA /* Main.storyboard */,
 				4B141CE21DD9500D00AD95AA /* Assets.xcassets */,
 				4B141CE41DD9500D00AD95AA /* LaunchScreen.storyboard */,
+				4B141CED1DD9516F00AD95AA /* GoogleService-Info.plist */,
 				4B141CE71DD9500D00AD95AA /* Info.plist */,
+				4B141CEF1DD96CBE00AD95AA /* toxics_OKformat.json */,
+				4B141CF11DD96D0200AD95AA /* FoodToxic.swift */,
 			);
 			path = JSONSample;
 			sourceTree = "<group>";
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B141CEA1DD9500D00AD95AA /* Build configuration list for PBXNativeTarget "JSONSample" */;
 			buildPhases = (
+				BDAE4093105EC36FA1E3560E /* [CP] Check Pods Manifest.lock */,
 				4B141CD41DD9500D00AD95AA /* Sources */,
 				4B141CD51DD9500D00AD95AA /* Frameworks */,
 				4B141CD61DD9500D00AD95AA /* Resources */,
+				5C14EC1642383E716E8A0C18 /* [CP] Embed Pods Frameworks */,
+				8BB41A0E0E170DCD701F4FCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B141CE61DD9500D00AD95AA /* LaunchScreen.storyboard in Resources */,
+				4B141CF01DD96CBE00AD95AA /* toxics_OKformat.json in Resources */,
+				4B141CEE1DD9516F00AD95AA /* GoogleService-Info.plist in Resources */,
 				4B141CE31DD9500D00AD95AA /* Assets.xcassets in Resources */,
 				4B141CE11DD9500D00AD95AA /* Main.storyboard in Resources */,
 			);
@@ -132,11 +170,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C14EC1642383E716E8A0C18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONSample/Pods-JSONSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BB41A0E0E170DCD701F4FCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONSample/Pods-JSONSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAE4093105EC36FA1E3560E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B141CD41DD9500D00AD95AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B141CF21DD96D0200AD95AA /* FoodToxic.swift in Sources */,
 				4B141CDE1DD9500D00AD95AA /* ViewController.swift in Sources */,
 				4B141CDC1DD9500D00AD95AA /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +344,7 @@
 		};
 		4B141CEB1DD9500D00AD95AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3839A343D7C49C2C224729 /* Pods-JSONSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WTE562C6VP;
@@ -270,6 +358,7 @@
 		};
 		4B141CEC1DD9500D00AD95AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9675699BACD03ECE076A292 /* Pods-JSONSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WTE562C6VP;
@@ -300,6 +389,7 @@
 				4B141CEC1DD9500D00AD95AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

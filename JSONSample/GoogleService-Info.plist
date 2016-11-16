@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>122486347338-f81immj7b4p8l2i18t9c7ilmanvra1l1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.122486347338-f81immj7b4p8l2i18t9c7ilmanvra1l1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBu0H3bSlhr6mT4px71WVhHWkjQq_2vKTA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>122486347338</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Sgmedical.JSONSample</string>
+	<key>PROJECT_ID</key>
+	<string>jsonsample-99cfe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jsonsample-99cfe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:122486347338:ios:57a7cda1978f16c7</string>
+	<key>DATABASE_URL</key>
+	<string>https://jsonsample-99cfe.firebaseio.com</string>
+</dict>
+</plist>
